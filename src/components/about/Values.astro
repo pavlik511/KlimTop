@@ -3,29 +3,29 @@ const values = [
   [
     {
       ref: '01',
-      name: 'Excellence',
+      name: 'Montáž Klimatizačních Jednotek:',
       description:
-        'Lorem ipsum, dolor sit amet consectetur adipisicing elit. Maiores impedit perferendis suscipit eaque, iste dolor cupiditate blanditiis ratione. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Maiores impedit perferendis suscipit eaque, iste dolor cupiditate blanditiis ratione.',
+        'Pomůžeme vám vytvořit optimální klima ve vašem prostoru prostřednictvím profesionální montáže klimatizačních jednotek. Bez ohledu na to, zda je vaše zařízení pro byt nebo kancelář, jsme zde, abychom zajistili efektivní a spolehlivý výkon.',
     },
     {
       ref: '02',
-      name: 'Innovation',
+      name: 'Servis a Údržba',
       description:
-        'Lorem ipsum, dolor sit amet consectetur adipisicing elit. Maiores impedit perferendis suscipit eaque, iste dolor cupiditate blanditiis ratione. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Maiores impedit perferendis suscipit eaque, iste dolor cupiditate blanditiis ratione.',
+        'Jsme tu, abychom zajistili, že vaše klimatizační jednotky a tepelná čerpadla pracují na svůj optimální výkon. Nabízíme pravidelný servis a údržbu, abychom prodloužili životnost vašich zařízení a minimalizovali potenciální poruchy.',
     },
   ],
   [
     {
       ref: '03',
-      name: 'Teamwork',
+      name: 'Tepelná Čerpadla',
       description:
-        'Lorem ipsum, dolor sit amet consectetur adipisicing elit. Maiores impedit perferendis suscipit eaque, iste dolor cupiditate blanditiis ratione. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Maiores impedit perferendis suscipit eaque, iste dolor cupiditate blanditiis ratione. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Maiores impedit perferendis suscipit eaque, iste dolor cupiditate blanditiis ratione.',
+        'Zabýváme se nejen klimatizací, ale také tepelnými čerpadly. Pomůžeme vám využít účinné vytápění a chlazení pro vaše domovy a podniky.',
     },
     {
       ref: '04',
-      name: 'Respect',
+      name: 'Profesionální Poradenství',
       description:
-        'Lorem ipsum, dolor sit amet consectetur adipisicing elit. Maiores impedit perferendis suscipit eaque, iste dolor cupiditate blanditiis ratione.',
+        'Chápeme, že každý projekt je jedinečný. Naši odborníci vám poskytnou individuální poradenství, které odpovídá vašim potřebám a představám.',
     },
   ],
 ];
@@ -34,17 +34,17 @@ const values = [
 <section class="py-16 sm:py-20">
   <div class="mx-auto max-w-2xl px-4 sm:px-6 lg:max-w-7xl lg:px-8">
     <div class="flex flex-col gap-8 lg:gap-12">
-      <h2 class="text-3xl font-medium tracking-tight sm:text-4xl">Our Values</h2>
+      <h2 class="text-3xl font-medium tracking-tight sm:text-4xl underline decoration-red decoration-4 underline-offset-4">Naše hodnoty</h2>
       <div class="grid gap-8 lg:grid-cols-2">
         {
           values.map((column, index) => (
             <div class:list={['space-y-8', index === 1 && 'lg:mt-16']}>
               {column.map((value) => (
-                <div class="bg-primary-500/10 dark:bg-primary-400/10 flex flex-col gap-12 rounded-3xl px-6 py-8">
-                  <p class="text-sm">{value.ref}</p>
+                <div class="bg-red dark:bg-primary-400/10 flex flex-col gap-12 rounded-3xl px-6 py-8">
+                  <p class="text-sm text-white">{value.ref}</p>
                   <div class="flex flex-col gap-4">
-                    <h3 class="text-xl font-medium">{value.name}</h3>
-                    <p class="text-primary-950/70 dark:text-primary-200/70 text-base sm:text-lg">
+                    <h3 class="text-xl font-medium text-white">{value.name}</h3>
+                    <p class="text-white dark:text-primary-200/70 text-base sm:text-lg">
                       {value.description}
                     </p>
                   </div>

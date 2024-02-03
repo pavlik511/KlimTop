@@ -2,23 +2,43 @@
 const links = [
   {
     ref: '01',
-    name: 'Home',
+    name: 'Domů',
     href: '/',
   },
   {
     ref: '02',
-    name: 'About',
-    href: '/about',
+    name: 'O firmě',
+    href: '/o-firme',
   },
   {
     ref: '03',
-    name: 'Pricing',
-    href: '/pricing',
+    name: 'Klimatizace',
+    href: '/klimatizace',
   },
   {
     ref: '04',
-    name: 'Contact',
-    href: '/contact',
+    name: 'Tepelná čerpadla',
+    href: '/tepelna-cerpadla',
+  },
+  {
+    ref: '05',
+    name: 'Rekuperace',
+    href: '/rekuperace',
+  },
+  {
+    ref: '06',
+    name: 'Servis',
+    href: '/servis',
+  },
+  {
+    ref: '07',
+    name: 'Galerie',
+    href: '/galerie',
+  },
+  {
+    ref: '08',
+    name: 'Kontakt',
+    href: '/kontakt',
   },
 ];
 ---
@@ -37,13 +57,13 @@ const links = [
         href="/"
         class="focus-visible:outline-primary-950 dark:group-focus-visible:outline-primary-200 rounded-md focus-visible:outline focus-visible:outline-2"
       >
-        <span class="sr-only">Stone</span>
+        <span class="sr-only">Klim–Tech</span>
         <img
           class="h-8 w-auto"
           width="65"
           height="40"
-          :src="$store.theme.isDark ? '/assets/logo-inverted.svg' : '/assets/logo.svg'"
-          alt="Stone"
+          src="/assets/klimtop_logo.png"
+          alt="logo klim–tech"
         />
       </a>
     </div>
@@ -57,7 +77,7 @@ const links = [
         x-data
         @click="$store.theme.toggle()"
       >
-        <span class="sr-only">Toggle theme mode</span>
+        <span class="sr-only">Přepínání režimu motivu</span>
         <svg
           x-cloak
           class="h-6 w-6"
@@ -96,7 +116,7 @@ const links = [
         aria-expanded="false"
         :aria-expanded="open.toString()"
       >
-        <span class="sr-only">Toggle menu</span>
+        <span class="sr-only">Přepínání menu</span>
         <svg
           x-cloak
           class="h-8 w-8"
@@ -141,8 +161,8 @@ const links = [
         <p
           class="text-primary-950/70 dark:text-primary-200/70 max-w-sm text-xl italic leading-loose"
         >
-          <span class="font-medium">Stone</span> is a premium Astro theme specially designed for
-          Business, Marketing, SaaS and Startup websites.
+          <span class="font-medium">Klimatizace & Tepelná čerpadla Jirout</span> 
+          info@klimtop.cz
         </p>
       </div>
 
