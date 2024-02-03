@@ -1,5 +1,5 @@
 import ImageGallery3 from 'react-image-gallery';
-import React from "react";
+import React from "@astrojs/react";
 
 import "react-image-gallery/styles/css/image-gallery.css";
 
