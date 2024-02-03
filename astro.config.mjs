@@ -9,5 +9,9 @@ export default defineConfig({
   experimental: {
     viewTransitions: true
   },
-  integrations: [tailwind(), compress(), react({experimentalReactChildren: true})]
+  integrations: [tailwind(), compress(), react()],
+  renderers: [
+    // ...
+    '@astrojs/renderer-react'
+  ]
 });
