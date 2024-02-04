@@ -6,8 +6,15 @@ import react from '@astrojs/react';
 
 // https://astro.build/config
 export default defineConfig({
+  prefetch: {
+    prefetchAll: true,
+    defaultStrategy: 'viewport'
+  },
   experimental: {
-    viewTransitions: true
+    viewTransitions: true,
+    clientPrerender: true,
+    optimizeHoistedScript: true,
+    contentCollectionCache: true
   },
   integrations: [tailwind(), compress(), react()],
   renderers: [

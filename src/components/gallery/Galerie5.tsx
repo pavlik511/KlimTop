@@ -5,10 +5,7 @@ import "react-image-gallery/styles/css/image-gallery.css";
 
 function App5(){
     const images5 = [
-      {
-        original: "/assets/picipavle.png",
-        thumbnail: "/assets/picipavle.png",
-      },
+      
   {
     original: "/assets/topeni.jpg",
     thumbnail: "/assets/topeni.jpg",
